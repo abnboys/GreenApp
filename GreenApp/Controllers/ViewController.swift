@@ -80,6 +80,37 @@ class ViewController: UIViewController {
     
     
     @IBAction func onClickOfBottumStackButtons(_ sender: UIButton) {
+        
+        switch sender.tag {
+        case 0:
+            
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "CopyVC") as? CopyVC {
+                
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+        case 1:
+            
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as? PaymentVC {
+                
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+        case 2:
+            
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "TrackingVC") as? TrackingVC {
+                
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+        default:
+            print("Error On selection")
+        }
+        
+        
     }
     
     

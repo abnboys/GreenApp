@@ -15,6 +15,12 @@
 		5B46F11620307C240036129B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B46F11420307C240036129B /* LaunchScreen.storyboard */; };
 		5B46F12120307C240036129B /* GreenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F12020307C240036129B /* GreenAppTests.swift */; };
 		5B46F12C20307C240036129B /* GreenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F12B20307C240036129B /* GreenAppUITests.swift */; };
+		5B46F13A20307EE60036129B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F13920307EE60036129B /* CustomTextField.swift */; };
+		5B46F13C20307EF20036129B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F13B20307EF20036129B /* CustomButton.swift */; };
+		5B46F13E20307F000036129B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F13D20307F000036129B /* CustomImageView.swift */; };
+		5B46F15A20309CD50036129B /* CodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F15920309CD50036129B /* CodeVC.swift */; };
+		5B46F15C20309CF80036129B /* TrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F15B20309CF80036129B /* TrackingVC.swift */; };
+		5B46F15E20309D1C0036129B /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46F15D20309D1C0036129B /* PaymentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5B46F12720307C240036129B /* GreenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B46F12B20307C240036129B /* GreenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenAppUITests.swift; sourceTree = "<group>"; };
 		5B46F12D20307C240036129B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B46F13920307EE60036129B /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5B46F13B20307EF20036129B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5B46F13D20307F000036129B /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		5B46F15920309CD50036129B /* CodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVC.swift; sourceTree = "<group>"; };
+		5B46F15B20309CF80036129B /* TrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingVC.swift; sourceTree = "<group>"; };
+		5B46F15D20309D1C0036129B /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +111,11 @@
 		5B46F10720307C240036129B /* GreenApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B46F16220309DC00036129B /* Utilities */,
+				5B46F16120309DB40036129B /* Model */,
+				5B46F16020309DAD0036129B /* View */,
+				5B46F15F20309DA20036129B /* Controllers */,
 				5B46F10820307C240036129B /* AppDelegate.swift */,
-				5B46F10A20307C240036129B /* ViewController.swift */,
 				5B46F10C20307C240036129B /* Main.storyboard */,
 				5B46F11220307C240036129B /* Assets.xcassets */,
 				5B46F11420307C240036129B /* LaunchScreen.storyboard */,
@@ -126,6 +141,41 @@
 				5B46F12D20307C240036129B /* Info.plist */,
 			);
 			path = GreenAppUITests;
+			sourceTree = "<group>";
+		};
+		5B46F15F20309DA20036129B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B46F10A20307C240036129B /* ViewController.swift */,
+				5B46F15920309CD50036129B /* CodeVC.swift */,
+				5B46F15B20309CF80036129B /* TrackingVC.swift */,
+				5B46F15D20309D1C0036129B /* PaymentVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B46F16020309DAD0036129B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B46F16120309DB40036129B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B46F16220309DC00036129B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5B46F13920307EE60036129B /* CustomTextField.swift */,
+				5B46F13B20307EF20036129B /* CustomButton.swift */,
+				5B46F13D20307F000036129B /* CustomImageView.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B46F13A20307EE60036129B /* CustomTextField.swift in Sources */,
+				5B46F13E20307F000036129B /* CustomImageView.swift in Sources */,
 				5B46F11120307C240036129B /* GreenApp.xcdatamodeld in Sources */,
+				5B46F15A20309CD50036129B /* CodeVC.swift in Sources */,
+				5B46F15E20309D1C0036129B /* PaymentVC.swift in Sources */,
 				5B46F10B20307C240036129B /* ViewController.swift in Sources */,
 				5B46F10920307C240036129B /* AppDelegate.swift in Sources */,
+				5B46F13C20307EF20036129B /* CustomButton.swift in Sources */,
+				5B46F15C20309CF80036129B /* TrackingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
